@@ -16,6 +16,11 @@ OS: Ubuntu 24.04 LTS (with Rockchip Linux 6.1)
 ```
 ## config sysctl
 ```
+echo net.ipv6.conf.all.forwarding=1 >> /etc/sysctl.conf
+echo net.ipv4.conf.all.forwarding=1 >> /etc/sysctl.conf
+echo net.ipv4.ip_forward=1 >> /etc/sysctl.conf
+sysctl -p --system
+modprobe br_netfilter
 ```
 ## install crio kubeadm kubectl kubelet
 ```
