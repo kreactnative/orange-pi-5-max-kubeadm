@@ -5,7 +5,7 @@ Orange pi 5 max
 Cpu: 8-core 64-bit processor
 Memory: ddr5 16gb
 NVMe SSD: SAMSUNG 980 PCIe/NVMe M.2 2280
-OS: Ubuntu 24.04 LTS (with Rockchip Linux 6.1)
+OS: Ubuntu 22.04 LTS (with Rockchip Linux 6.1)
 ```
 ## Install OS/nvme ssd boot
 ```
