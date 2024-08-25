@@ -1,0 +1,35 @@
+helm repo add cilium https://helm.cilium.io/
+helm repo update
+helm upgrade --install cilium cilium/cilium \
+    --namespace cilium --create-namespace \
+    --set bpf.masquerade=true \
+    --set ipam.operator.clusterPoolIPv4PodCIDR=10.42.0.0/16 \
+    --set ipv4NativeRoutingCIDR=10.0.0.0/8 \
+    --set ipv6NativeRoutingCIDR=fd00::/100 \
+    --set ipv4.enabled=true \
+    --set ipv6.enabled=true \
+    --set k8sServiceHost=192.168.1.64 \
+    --set k8sServicePort=6443  \
+    --set kubeProxyReplacement=true  \
+    --set bandwidthManager.enabled=true \
+    --set operator.replicas=1  \
+    --set serviceAccounts.cilium.name=cilium  \
+    --set serviceAccounts.operator.name=cilium-operator  \
+    --set ipam.mode=kubernetes \
+    --set ipam.operator.clusterPoolIPv4PodCIDRList="10.220.0.0/16" \
+    --set ipam.operator.clusterPoolIPv6PodCIDRList="fe00::/100" \
+    --set ipam.operator.clusterPoolIPv4MaskSize=24 \
+    --set ipam.operator.clusterPoolIPv6MaskSize=112 \
+    --set tunnel=vxlan \
+    --set hubble.enabled=true \
+    --set hubble.relay.enabled=true \
+    --set hubble.ui.enabled=true \
+    --set prometheus.enabled=true \
+    --set operator.prometheus.enabled=true \
+    --set hubble.metrics.enabled="{dns,drop,tcp,flow,port-distribution,icmp,http}" \
+    --set enableIPv6Masquerade=true \
+    --set l2announcements.enabled=true \
+    --set l2announcements.leaseDuration=3s \
+    --set l2announcements.leaseRenewDeadline=1s \
+    --set l2announcements.leaseRetryPeriod=200ms \
+    --set externalIPs.enabled=true
