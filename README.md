@@ -10,9 +10,9 @@ OS: Ubuntu 22.04 LTS (with Rockchip Linux 6.1)
 ![alt text](resources/1.png "Oveview")
 ![alt text](resources/2.jpg "OS")
 ## Install OS/nvme ssd boot
-```
+https://github.com/Joshua-Riek/ubuntu-rockchip
 
-```
+https://najigram.com/2024/02/how-to-boot-from-an-nvme-drive-on-orange-pi-3b/
 ## Config /etc/hosts
 ```
 ```
