@@ -7,6 +7,8 @@ Memory: ddr5 16gb
 NVMe SSD: SAMSUNG 980 PCIe/NVMe M.2 2280
 OS: Ubuntu 22.04 LTS (with Rockchip Linux 6.1)
 ```
+![alt text](resources/1.png "Oveview")
+![alt text](resources/2.jpg "OS")
 ## Install OS/nvme ssd boot
 ```
 
