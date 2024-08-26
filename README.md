@@ -1,5 +1,5 @@
 ## Orange-pi-5-max-kubeadm-dual-stack
-## Hardware
+## hardware
 ```
 Orange pi 5 max
 Cpu: 8-core 64-bit processor
@@ -13,7 +13,7 @@ OS: Ubuntu 22.04 LTS (with Rockchip Linux 6.1)
 https://github.com/Joshua-Riek/ubuntu-rockchip
 
 https://najigram.com/2024/02/how-to-boot-from-an-nvme-drive-on-orange-pi-3b/
-## Config /etc/hosts
+## config /etc/hosts
 ```
 {ipv4} {hostname}
 {ipv6} {hostname}
