@@ -15,6 +15,8 @@ https://github.com/Joshua-Riek/ubuntu-rockchip
 https://najigram.com/2024/02/how-to-boot-from-an-nvme-drive-on-orange-pi-3b/
 ## Config /etc/hosts
 ```
+{ipv4} {hostname}
+{ipv6} {hostname}
 ```
 ## config sysctl
 ```
